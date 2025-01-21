@@ -38,6 +38,11 @@ const CardContainer = styled.div`
     &:hover {
         transform: translateY(-5px);
     }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: stretch;
+    }
 `;
 
 const CardColumn = styled.div`

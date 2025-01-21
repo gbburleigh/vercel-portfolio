@@ -13,6 +13,11 @@ const NavContainer = styled.nav`
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
 `;
 
 const NavLinks = styled.div`

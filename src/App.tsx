@@ -148,6 +148,12 @@ const BoldHeader = styled.header`
     text-align: center;
     padding: 2rem 2rem 0; /* Increased padding */
     margin-bottom: 0 auto;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
 `;
 
 const Name = styled.h1`
@@ -157,6 +163,10 @@ const Name = styled.h1`
     letter-spacing: 2px; /* Slight letter spacing */
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
 `;
 
 const Title = styled.p`
@@ -164,6 +174,10 @@ const Title = styled.p`
     font-weight: 700; /* Bold */
     color: #eee; /* Slightly lighter text */
     letter-spacing: 1px;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `;
 
 const App: React.FC = () => {
