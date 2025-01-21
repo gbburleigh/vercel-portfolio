@@ -34,9 +34,13 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Gradient background */
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.05) 20vh, rgba(255, 255, 255, 0.1) 50vh, rgba(255, 255, 255, 0.05) 80vh, rgba(0,0,0,0));
-    background-repeat: no-repeat;
+    min-width: 100vw;
+    
+    @media (max-width: 768px) {
+        align-items: stretch; /* Stretch content to full width on mobile */
+        height: 100%;
+        width: 100%;
+    }
   }
 
   * {
@@ -58,6 +62,9 @@ export const StylishParagraph = styled.p`
   font-family: 'Inter', sans-serif; /* Use Inter font */
   letter-spacing: 0.02em; /* Subtle letter spacing */
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 `;
 
 // const CodeSnippet = styled.code`

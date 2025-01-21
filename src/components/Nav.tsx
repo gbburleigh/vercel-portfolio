@@ -15,8 +15,9 @@ const NavContainer = styled.nav`
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     @media (max-width: 768px) {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 1rem;
+        padding: 1rem 0;
     }
 `;
 

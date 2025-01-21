@@ -41,13 +41,22 @@ const CardContainer = styled.div`
 
     @media (max-width: 768px) {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        align-content: center;
+        text-align: center;
     }
 `;
 
 const CardColumn = styled.div`
     flex: 1 1 48%; /* Adjust width as needed */
     min-width: 250px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
 `;
 
 const CardImage = styled.img`
@@ -65,6 +74,14 @@ const CardTitle = styled.h3`
     display: flex; /* Use flexbox for title and logo */
     align-items: center; /* Vertically align title and logo */
     gap: 1rem; /* Space between title and logo */
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    
 `;
 
 const CompanyLogoImg = styled.img`
@@ -143,6 +160,9 @@ const TechList = styled.ul`
     display: flex;
     flex-direction: row; /* Organize into columns */
     gap: 1rem;
+    @media (max-width: 768px) {
+        scale: .85;
+    }
 `;
 
 // const TechColumn = styled.div`
