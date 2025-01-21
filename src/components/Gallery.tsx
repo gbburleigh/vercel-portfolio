@@ -34,17 +34,6 @@ const fadeOut = keyframes`
     }
 `;
 
-const zoomOut = keyframes`
-    from {
-        transform: scale(1);
-        opacity: 1;
-    }
-    to {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-`;
-
 const ModalOverlay = styled.div`
     position: fixed;
     top: 0;

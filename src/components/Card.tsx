@@ -140,11 +140,11 @@ const TechList = styled.ul`
     gap: 1rem;
 `;
 
-const TechColumn = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-`;
+// const TechColumn = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1rem;
+// `;
 
 const TechItem = styled.li`
     display: flex;

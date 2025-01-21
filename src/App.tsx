@@ -8,20 +8,20 @@ import northwesternLogo from './assets/northwestern-university.svg';
 import family from './assets/family.jpg';
 import conference from './assets/conference.jpg';
 import theatre from './assets/theatre.jpg';
-import city from './assets/city.jpg';
+// import city from './assets/city.jpg';
 import michigan from './assets/michigan.jpg';
-import view from './assets/view.jpg';
-import art from './assets/art.jpg';
+// import view from './assets/view.jpg';
+// import art from './assets/art.jpg';
 import bar from './assets/bar.jpg';
 import bucky from './assets/bucky.png';
-import cat1 from './assets/cat1.jpg';
+// import cat1 from './assets/cat1.jpg';
 import cat2 from './assets/cat2.jpg';
 import dinner from './assets/dinner.jpg';
-import itay from './assets/itay.jpg';
+// import itay from './assets/itay.jpg';
 import newyork from './assets/newyork.jpg';
 import orlando from './assets/orlando.jpg';
 import sphinx from './assets/sphinx.jpg';
-import suits from './assets/suits.jpg';
+// import suits from './assets/suits.jpg';
 import training from './assets/training.jpg';
 
 const GlobalStyle = createGlobalStyle`
@@ -60,28 +60,28 @@ export const StylishParagraph = styled.p`
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
 `;
 
-const CodeSnippet = styled.code`
-    font-family: 'Fira Code', monospace;
-    background-color: #222;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    color: #9cdcfe;
-`
+// const CodeSnippet = styled.code`
+//     font-family: 'Fira Code', monospace;
+//     background-color: #222;
+//     padding: 0.2rem 0.4rem;
+//     border-radius: 4px;
+//     font-size: 0.9rem;
+//     color: #9cdcfe;
+// `
 
-const StylishList = styled.ul`
-    list-style-type: disc; /* Use disc bullets */
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
-`
+// const StylishList = styled.ul`
+//     list-style-type: disc; /* Use disc bullets */
+//     padding-left: 2rem;
+//     margin-bottom: 1.5rem;
+// `
 
-const StylishListItem = styled.li`
-    margin-bottom: 0.75rem;
-    color: #ddd;
-    font-size: 1.15rem;
-    line-height: 1.7;
-    font-family: 'Inter', sans-serif;
-`
+// const StylishListItem = styled.li`
+//     margin-bottom: 0.75rem;
+//     color: #ddd;
+//     font-size: 1.15rem;
+//     line-height: 1.7;
+//     font-family: 'Inter', sans-serif;
+// `
 
 // Example of importing a font
 import '@fontsource/roboto'; // Defaults to weight 400 with normal style.
@@ -197,14 +197,14 @@ const App: React.FC = () => {
             </BoldHeader>
             <Divider />
           <Main>
-              <AnimatedSection id="about" ref={(el) => sectionRefs.current[0] = el} className={visibleSections[0] ? 'visible' : ''}>
+              <AnimatedSection id="about" ref={(el) => sectionRefs.current[0] = el as HTMLElement } className={visibleSections[0] ? 'visible' : ''}>
                   <SectionTitle>About Me</SectionTitle>
                   {/* <ProfileImage src={profileImage} alt="Your Profile" /> */}
                   <Bio />
               </AnimatedSection>
               <Divider />
               
-              <AnimatedSection id="projects" ref={(el) => sectionRefs.current[1] = el} className={visibleSections[1] ? 'visible' : ''}>
+              <AnimatedSection id="projects" ref={(el) => sectionRefs.current[1] = el as HTMLElement} className={visibleSections[1] ? 'visible' : ''}>
                   <SectionTitle>Work</SectionTitle>
                   <Card
                       title="Stax Payments"
@@ -263,7 +263,7 @@ const App: React.FC = () => {
               </AnimatedSection>
               <Divider />
 
-              <AnimatedSection id="projects" ref={(el) => sectionRefs.current[2] = el} className={visibleSections[1] ? 'visible' : ''}>
+              <AnimatedSection id="projects" ref={(el) => sectionRefs.current[2] = el as HTMLElement} className={visibleSections[1] ? 'visible' : ''}>
                   <SectionTitle>Projects</SectionTitle>
                   <StylishParagraph>I'm currently learning Golang and keeping my Python skills sharp. Most of my projects are research-focused with an emphasis on exploring new fields. I always like learning about different verticals within the industry!</StylishParagraph>
                   <Card
@@ -358,7 +358,7 @@ const App: React.FC = () => {
                   />
               </AnimatedSection>
               <Divider />
-              <AnimatedSection id="life" ref={(el) => sectionRefs.current[3] = el} className={visibleSections[2] ? 'visible' : ''}>
+              <AnimatedSection id="life" ref={(el) => sectionRefs.current[3] = el as HTMLElement} className={visibleSections[2] ? 'visible' : ''}>
                   <SectionTitle>Life</SectionTitle>
                   {/* <Card
                     title="Life Experience 1"
@@ -397,7 +397,7 @@ const App: React.FC = () => {
                   ]}/>
               </AnimatedSection>
               <Divider />
-              <AnimatedSection id="contact" ref={(el) => sectionRefs.current[4] = el} className={visibleSections[3] ? 'visible' : ''}>
+              <AnimatedSection id="contact" ref={(el) => sectionRefs.current[4] = el as HTMLElement} className={visibleSections[3] ? 'visible' : ''}>
                   <SectionTitle>Contact</SectionTitle>
                   <StylishParagraph>I'd love to hear from you! Whether you have a project in mind, want to discuss web development, or just want to say hello, please don't hesitate to get in touch. I'm available via email at <strong>grahamburleigh6@gmail.com</strong> and you can also find me on <strong>LinkedIn</strong> or <strong>GitHub</strong>. I look forward to connecting!</StylishParagraph>
                   <Downloader filename="Resume.pdf" filetype="PDF" href={'../public/Resume.pdf'}/>
