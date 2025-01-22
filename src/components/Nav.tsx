@@ -11,7 +11,7 @@ const NavParent = styled.nav`
     background-color: #000;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
@@ -107,12 +107,15 @@ const Nav: React.FC = () => {
                 </HamburgerIcon>
             </NavContainer>
             <NavLinks isOpen={isNavOpen}> {/* Pass isOpen prop */}
-                <NavLink href="#about">About</NavLink>
-                <NavLink href="#projects">Projects</NavLink>
-                <NavLink href="#life">Life</NavLink>
-                <NavLink href="#contact">Contact</NavLink>
-                <ExternalNavLink href="https://github.com/gbburleigh" target="_blank" rel="noopener noreferrer">GitHub</ExternalNavLink>
-                <ExternalNavLink href="https://www.linkedin.com/in/gbburleigh" target="_blank" rel="noopener noreferrer">LinkedIn</ExternalNavLink>
+                <NavLink href="/">Home</NavLink>
+                <NavLink href="/#about">About</NavLink>
+                <NavLink href="/#work">Work</NavLink>
+                <NavLink href="/#projects">Projects</NavLink>
+                <NavLink href="/#life">Life</NavLink>
+                <NavLink href="/#contact">Contact</NavLink>
+                {/* <ExternalNavLink href="https://github.com/gbburleigh" target="_blank" rel="noopener noreferrer">GitHub</ExternalNavLink>
+                <ExternalNavLink href="https://www.linkedin.com/in/gbburleigh" target="_blank" rel="noopener noreferrer">LinkedIn</ExternalNavLink> */}
+                <NavLink href="/blog">Blog</NavLink>
             </NavLinks>
         </NavParent>
     );
