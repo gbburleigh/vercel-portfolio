@@ -76,21 +76,21 @@ const NavLink = styled.a`
     }
 `;
 
-const ExternalNavLink = styled.a`
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    border: 2px solid transparent;
+// const ExternalNavLink = styled.a`
+//     color: #fff;
+//     text-decoration: none;
+//     font-weight: 600;
+//     transition: color 0.3s;
+//     padding: 0.5rem 1rem;
+//     border-radius: 4px;
+//     border: 2px solid transparent;
 
-    &:hover {
-        color: #000;
-        background-color: #fff;
-        border-color: #fff;
-    }
-`
+//     &:hover {
+//         color: #000;
+//         background-color: #fff;
+//         border-color: #fff;
+//     }
+// `
 
 const Nav: React.FC = () => {
     const [isNavOpen, setIsNavOpen] = useState(false); // State for nav open/close

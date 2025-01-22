@@ -3,14 +3,6 @@ import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import blogPosts from '../../../assets/posts.json';
 
-// Define the BlogPost interface (you should have this already)
-interface BlogPost {
-    id: string;
-    title: string;
-    image: string;
-    content: string;
-}
-
 const FullPostContainer = styled.div`
     width: 80%;
     margin: 2rem auto;

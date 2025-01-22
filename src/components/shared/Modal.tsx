@@ -1,12 +1,6 @@
 import React, { useState, useEffect, useRef, ReactNode } from 'react';
-import styled, { keyframes, createGlobalStyle } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
-
-const GlobalStyle = createGlobalStyle<{ modalOpen: boolean }>`
-    body {
-        overflow: ${props => props.modalOpen ? 'hidden' : 'auto'};
-    }
-`;
 
 const fadeIn = keyframes`
     from {
