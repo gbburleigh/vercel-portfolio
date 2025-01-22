@@ -322,7 +322,7 @@ const App: React.FC = () => {
                         "DevOps",
                         "Util",
                         "AWS",
-                        "DataDog"
+                        "Datadog"
                       ]}
                   />
                   <Card

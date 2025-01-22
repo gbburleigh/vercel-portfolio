@@ -48,7 +48,7 @@ const CardContainer = styled.div`
 `;
 
 const CardColumn = styled.div`
-    flex: 1 1 48%; /* Adjust width as needed */
+    flex: 1 1 47%; /* Adjust width as needed */
     min-width: 250px;
 
     @media (max-width: 768px) {
@@ -159,6 +159,7 @@ const TechList = styled.ul`
     margin: 0;
     display: flex;
     flex-direction: row; /* Organize into columns */
+    flex-wrap: nowrap;
     gap: 1rem;
     @media (max-width: 768px) {
         scale: .8;
