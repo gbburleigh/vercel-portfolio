@@ -111,8 +111,8 @@ const Nav: React.FC = () => {
                 <NavLink href="#projects">Projects</NavLink>
                 <NavLink href="#life">Life</NavLink>
                 <NavLink href="#contact">Contact</NavLink>
-                <ExternalNavLink href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</ExternalNavLink>
-                <ExternalNavLink href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</ExternalNavLink>
+                <ExternalNavLink href="https://github.com/gbburleigh" target="_blank" rel="noopener noreferrer">GitHub</ExternalNavLink>
+                <ExternalNavLink href="https://www.linkedin.com/in/gbburleigh" target="_blank" rel="noopener noreferrer">LinkedIn</ExternalNavLink>
             </NavLinks>
         </NavParent>
     );

@@ -234,7 +234,7 @@ const App: React.FC = () => {
                   <Card
                       title="Stax Payments"
                       description="Stax Payments is a fintech company that provides a secure and easy-to-use payment processing solution for businesses of all sizes."
-                      link="https://example.com/project1"
+                      link="https://staxpayments.com/"
                       linkText="Stax Payments"
                       technologies={[
                         "Node.js",
@@ -252,7 +252,7 @@ const App: React.FC = () => {
                   <Card
                       title="CardX"
                       description="CardX is a fintech company that provides a secure and easy-to-use payment processing solution for businesses of all sizes."
-                      link="https://example.com/project1"
+                      link="https://cardx.com/"
                       linkText="CardX"
                       technologies={[
                         "Vue.js",
@@ -270,7 +270,7 @@ const App: React.FC = () => {
                   <Card
                       title="Northwestern University"
                       description="Northwestern University is a leading research university in the United States."
-                      link="https://example.com/project1"
+                      link="https://www.mccormick.northwestern.edu/"
                       linkText="Northwestern University"
                       technologies={[
                         "Python",
@@ -294,7 +294,7 @@ const App: React.FC = () => {
                   <Card
                       title="quick-seeders"
                       description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
-                      link="https://example.com/project1"
+                      link="https://github.com/gbburleigh/quick-seeders"
                       linkText="View Project"
                       technologies={[
                         "Python",
@@ -311,7 +311,7 @@ const App: React.FC = () => {
                   <Card
                       title="quick-logger"
                       description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
-                      link="https://example.com/project1"
+                      link="https://github.com/gbburleigh/quick-logger"
                       linkText="View Project"
                       progress={50}
                       technologies={[
@@ -328,7 +328,7 @@ const App: React.FC = () => {
                   <Card
                       title="quick-gateway"
                       description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
-                      link="https://example.com/project1"
+                      link="https://github.com/gbburleigh/quick-gateway"
                       linkText="View Project"
                       progress={50}
                       technologies={[
@@ -343,7 +343,7 @@ const App: React.FC = () => {
                   <Card
                       title="quick-card-tokenizer"
                       description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
-                      link="https://example.com/project1"
+                      link="https://github.com/gbburleigh/quick-card-tokenizer"
                       linkText="View Project"
                       technologies={[
                         "Golang",
@@ -357,7 +357,7 @@ const App: React.FC = () => {
                   <Card
                       title="quick-auth"
                       description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
-                      link="https://example.com/project1"
+                      link="https://github.com/gbburleigh/quick-auth"
                       linkText="View Project"
                       progress={0}
                       technologies={[
@@ -370,7 +370,7 @@ const App: React.FC = () => {
                   <Card
                       title="quick-tools/quick-gha"
                       description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
-                      link="https://example.com/project1"
+                      link="https://github.com/gbburleigh/quick-tools"
                       linkText="View Project"
                       progress={10}
                       technologies={[
