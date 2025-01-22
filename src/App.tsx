@@ -38,8 +38,6 @@ const GlobalStyle = createGlobalStyle`
     
     @media (max-width: 768px) {
         align-items: stretch; /* Stretch content to full width on mobile */
-        height: 100%;
-        width: 100%;
     }
   }
 
@@ -63,8 +61,10 @@ export const StylishParagraph = styled.p`
   letter-spacing: 0.02em; /* Subtle letter spacing */
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
   @media (max-width: 768px) {
-        font-size: 1rem;
-    }
+    white-space: pre-line;
+    word-breal: break-all;
+    word-wrap: break-word;
+  }
 `;
 
 // const CodeSnippet = styled.code`
@@ -135,6 +135,10 @@ const AnimatedSection = styled.section`
     &.visible {
         animation: ${fadeIn} 0.8s forwards;
     }
+
+    @media (max-width: 768px) {
+      padding: 0.5rem;
+  }
 `
 
 const SectionTitle = styled.h1`

@@ -12,7 +12,6 @@ const NavContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
@@ -24,6 +23,10 @@ const NavContainer = styled.nav`
 const NavLinks = styled.div`
     display: flex;
     gap: 2rem;
+    @media (max-width: 768px) {
+        gap: 1rem;
+        padding: 1rem 0;
+    }
 `;
 
 const NavLink = styled.a`

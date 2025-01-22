@@ -161,7 +161,9 @@ const TechList = styled.ul`
     flex-direction: row; /* Organize into columns */
     gap: 1rem;
     @media (max-width: 768px) {
-        scale: .85;
+        scale: .8;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 `;
 
