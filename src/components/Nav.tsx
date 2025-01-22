@@ -1,33 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 
 // ... other imports and styles
 
-const NavContainer = styled.nav`
+const NavParent = styled.nav`
     position: sticky;
     top: 0;
-    z-index: 100; /* Ensure nav stays on top */
+    z-index: 100;
     background-color: #000;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+
     @media (max-width: 768px) {
         flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem 0;
+        align-items: stretch;
+        padding: 1rem;
     }
 `;
 
-const NavLinks = styled.div`
+const NavContainer = styled.div`
     display: flex;
-    gap: 2rem;
-    @media (max-width: 768px) {
-        gap: 1rem;
-        padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (min-width: 769px) {
+        display: block;
     }
 `;
+
+const NavLinks = styled.div<{ isOpen: boolean }>`
+    display: flex;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')}; /* Conditionally show/hide */
+    }
+`;
+
+const HamburgerIcon = styled.button`
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+
+    @media (min-width: 769px) {
+        display: none; /* Hide on larger screens */
+    }
+`;
+
 
 const NavLink = styled.a`
     color: #fff;
@@ -62,19 +93,28 @@ const ExternalNavLink = styled.a`
 `
 
 const Nav: React.FC = () => {
+    const [isNavOpen, setIsNavOpen] = useState(false); // State for nav open/close
+
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
+    
     return (
-        <NavContainer>
-            <NavLinks>
+        <NavParent>
+            <NavContainer>
+                <HamburgerIcon onClick={toggleNav}>
+                    {isNavOpen ? <FaTimes /> : <FaBars />} {/* Toggle icons */}
+                </HamburgerIcon>
+            </NavContainer>
+            <NavLinks isOpen={isNavOpen}> {/* Pass isOpen prop */}
                 <NavLink href="#about">About</NavLink>
                 <NavLink href="#projects">Projects</NavLink>
                 <NavLink href="#life">Life</NavLink>
                 <NavLink href="#contact">Contact</NavLink>
+                <ExternalNavLink href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</ExternalNavLink>
+                <ExternalNavLink href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</ExternalNavLink>
             </NavLinks>
-            <NavLinks>
-                <ExternalNavLink href="https://github.com/gbburleigh" target="_blank" rel="noopener noreferrer">GitHub</ExternalNavLink>
-                <ExternalNavLink href="https://www.linkedin.com/in/gbburleigh" target="_blank" rel="noopener noreferrer">LinkedIn</ExternalNavLink>
-            </NavLinks>
-        </NavContainer>
+        </NavParent>
     );
 };
 

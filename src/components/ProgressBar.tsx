@@ -7,10 +7,6 @@ const ProgressBarContainer = styled.div`
     border-radius: 5px;
     overflow: hidden;
     margin-top: 1rem;
-
-    @media (max-width: 768px) {
-        scale: .85;
-    }
 `;
 
 type ProgressBarProps = { 

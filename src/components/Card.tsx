@@ -56,6 +56,7 @@ const CardColumn = styled.div`
         align-items: center;
         align-content: center;
         text-align: center;
+        width: 85%;
     }
 `;
 
@@ -162,9 +163,12 @@ const TechList = styled.ul`
     flex-wrap: nowrap;
     gap: 1rem;
     @media (max-width: 768px) {
-        scale: .8;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        white-space: pre-line;
+        word-break: none;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
 `;
 
@@ -180,6 +184,10 @@ const TechItem = styled.li`
     gap: 0.5rem;
     color: #ddd;
     font-size: 1.2rem;
+    @media (max-width: 768px) {
+        font-size: 0.75rem;
+        text-align: center;
+    }
 `;
 
 const TechIcon = styled.span`

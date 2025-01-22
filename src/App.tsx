@@ -62,7 +62,7 @@ export const StylishParagraph = styled.p`
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
   @media (max-width: 768px) {
     white-space: pre-line;
-    word-breal: break-all;
+    word-break: break-all;
     word-wrap: break-word;
   }
 `;
@@ -280,8 +280,8 @@ const App: React.FC = () => {
                         "Puppeteer",
                         "GitHub",
                         "Analytics",
-                        "Security",
-                        "Web"
+                        "Web",
+                        "Security"
                       ]}
                       companyLogo={northwesternLogo}
                   />
