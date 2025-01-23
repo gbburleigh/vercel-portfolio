@@ -229,7 +229,7 @@ const Home: React.FC = () => {
                   <StylishParagraph>I'm currently learning Golang and keeping my Python skills sharp. Most of my projects are research-focused with an emphasis on exploring new fields. I always like learning about different verticals within the industry!</StylishParagraph>
                   <Card
                       title="quick-seeders"
-                      description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
+                      description="A fast test data generation tool designed to quickly populate databases for development and testing. Streamlines setup and ensures consistent test environments."
                       link="https://github.com/gbburleigh/quick-seeders"
                       linkText="View Project"
                       technologies={[
@@ -246,7 +246,7 @@ const Home: React.FC = () => {
                   />
                   <Card
                       title="quick-logger"
-                      description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
+                      description="A simple logging service providing efficient log streaming via gRPC. Designed for rapid integration and streamlined debugging in microservice architectures."
                       link="https://github.com/gbburleigh/quick-logger"
                       linkText="View Project"
                       progress={50}
@@ -263,7 +263,7 @@ const Home: React.FC = () => {
                   />
                   <Card
                       title="quick-gateway"
-                      description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
+                      description="A mock payment gateway service facilitating end-to-end testing of payment flows. Enables developers to simulate various transaction scenarios and responses."
                       link="https://github.com/gbburleigh/quick-gateway"
                       linkText="View Project"
                       progress={50}
@@ -278,7 +278,7 @@ const Home: React.FC = () => {
                   />
                   <Card
                       title="quick-card-tokenizer"
-                      description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
+                      description="A mock card tokenization service simulating secure token generation over HTTP. Useful for testing payment processing integrations without handling real card data."
                       link="https://github.com/gbburleigh/quick-card-tokenizer"
                       linkText="View Project"
                       technologies={[
@@ -292,7 +292,7 @@ const Home: React.FC = () => {
                   />
                   <Card
                       title="quick-auth"
-                      description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
+                      description="A basic server authentication handler providing simple and effective access control. Implements standard authentication methods for securing APIs and applications."
                       link="https://github.com/gbburleigh/quick-auth"
                       linkText="View Project"
                       progress={0}
@@ -304,9 +304,23 @@ const Home: React.FC = () => {
                       ]}
                   />
                   <Card
-                      title="quick-tools/quick-gha"
-                      description="Go implementation of a secure tokenization system, safeguarding cardholder information with modern cryptographic techniques."
+                      title="quick-tools"
+                      description="A collection of useful scripts, commands, and resources for streamlining common development tasks. Includes utilities for automation, data manipulation, and more."
                       link="https://github.com/gbburleigh/quick-tools"
+                      linkText="View Project"
+                      progress={10}
+                      technologies={[
+                        "Golang",
+                        "SQL",
+                        "Testing",
+                        "Util",
+                        "Web"
+                      ]}
+                  />
+                  <Card
+                      title="quick-gha"
+                      description="A curated collection of reusable GitHub Actions designed to automate CI/CD workflows. Provides streamlined build, test, and deployment processes for Go projects."
+                      link="https://github.com/gbburleigh/quick-gha"
                       linkText="View Project"
                       progress={10}
                       technologies={[
