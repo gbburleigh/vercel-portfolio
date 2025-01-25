@@ -242,7 +242,7 @@ const Home: React.FC = () => {
                         "Util"
 
                       ]}
-                      progress={0}
+                      progress={90}
                   />
                   <Card
                       title="quick-logger"
@@ -308,7 +308,7 @@ const Home: React.FC = () => {
                       description="A collection of useful scripts, commands, and resources for streamlining common development tasks. Includes utilities for automation, data manipulation, and more."
                       link="https://github.com/gbburleigh/quick-tools"
                       linkText="View Project"
-                      progress={10}
+                      progress={40}
                       technologies={[
                         "Golang",
                         "SQL",
@@ -322,7 +322,7 @@ const Home: React.FC = () => {
                       description="A curated collection of reusable GitHub Actions designed to automate CI/CD workflows. Provides streamlined build, test, and deployment processes for Go projects."
                       link="https://github.com/gbburleigh/quick-gha"
                       linkText="View Project"
-                      progress={10}
+                      progress={80}
                       technologies={[
                         "Golang",
                         "SQL",

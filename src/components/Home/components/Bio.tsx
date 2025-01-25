@@ -6,14 +6,16 @@ import { StylishParagraph } from '../../shared/StylishParagraph';
 const AboutMeContainer = styled.div`
   display: flex;
   flex-wrap: wrap; /* Allows content to wrap on smaller screens */
-  gap: 2rem; /* Space between columns */
+  gap: 1rem; /* Space between columns */
   align-items: center; /* Vertically align content */
   padding: 8px;
 `;
 
 const AboutMeColumn = styled.div`
-  flex: 1 1 45%; /* Each column takes up 45% of the available space, with some flex-grow/shrink */
+  display: flex;
+  flex: 1 1 40%; /* Each column takes up 45% of the available space, with some flex-grow/shrink */
   min-width: 300px; /* Minimum width for each column */
+  justify-content: center;
 `;
 
 const ProfileImage = styled.img`

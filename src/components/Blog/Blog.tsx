@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Posts from './components/Posts';
+import { BiLoader } from 'react-icons/bi';
 
 const BlogPage = styled.div`
     padding: 2rem;
@@ -18,7 +19,8 @@ const BlogTitle = styled.h1`
 const Blog: React.FC = () => {
     return (
         <BlogPage>
-            <BlogTitle>gb.blog</BlogTitle>
+            <BlogTitle>gb.blog &#127796;</BlogTitle>
+            <span style={{marginLeft: '5%', fontSize: '1.5rem', fontWeight: 'lighter'}}>Under Construction! &#129520;</span>
             <Posts/>
         </BlogPage>
     );

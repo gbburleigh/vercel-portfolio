@@ -17,11 +17,12 @@ import {
     FaFlask,
     FaLock,
     FaWrench,
-    FaGlobe
+    FaGlobe,
 } from 'react-icons/fa'; // Import icons
 import { SiTypescript, SiNextdotjs, SiDatadog, SiJira, SiBitbucket, SiPuppeteer, SiJest } from "react-icons/si"
 import { FaGears, FaGithub, FaGolang, FaSackDollar } from 'react-icons/fa6';
 import ProgressBar from './ProgressBar';
+import { BiLoader } from 'react-icons/bi';
 
 const CardContainer = styled.div`
     background-color: #111;
@@ -230,6 +231,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link, linkText, 
                 <CardTitle>
                     {companyLogo && <CompanyLogoImg src={companyLogo} />}
                     {title}
+                    {progress === 0 && <BiLoader />}
                 </CardTitle>
                 <CardDescription>{description}</CardDescription>
                 {link && linkText && (
