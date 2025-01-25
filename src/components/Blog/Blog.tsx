@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Posts from './components/Posts';
-import { BiLoader } from 'react-icons/bi';
 
 const BlogPage = styled.div`
     padding: 2rem;
