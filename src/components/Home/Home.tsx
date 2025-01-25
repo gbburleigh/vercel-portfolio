@@ -33,6 +33,12 @@ import training from '../../assets/training.jpg';
 import '@fontsource/inter';
 import '@fontsource/fira-code';
 import '@fontsource/roboto';
+import { LuLogs } from 'react-icons/lu';
+import { BiData } from 'react-icons/bi';
+import { GrGateway } from 'react-icons/gr';
+import { GiToken } from 'react-icons/gi';
+import { BsTools } from 'react-icons/bs';
+import { DiGithubBadge } from 'react-icons/di';
 
 
 const fadeIn = keyframes`
@@ -228,7 +234,7 @@ const Home: React.FC = () => {
                   <SectionTitle>Projects</SectionTitle>
                   <StylishParagraph>I'm currently learning Golang and keeping my Python skills sharp. Most of my projects are research-focused with an emphasis on exploring new fields. I always like learning about different verticals within the industry!</StylishParagraph>
                   <Card
-                      title="quick-seeders"
+                      title={<>quick-seeders <BiData/></>}
                       description="A fast test data generation tool designed to quickly populate databases for development and testing. Streamlines setup and ensures consistent test environments."
                       link="https://github.com/gbburleigh/quick-seeders"
                       linkText="View Project"
@@ -245,7 +251,7 @@ const Home: React.FC = () => {
                       progress={90}
                   />
                   <Card
-                      title="quick-logger"
+                      title={<>quick-logger <LuLogs/></>}
                       description="A simple logging service providing efficient log streaming via gRPC. Designed for rapid integration and streamlined debugging in microservice architectures."
                       link="https://github.com/gbburleigh/quick-logger"
                       linkText="View Project"
@@ -262,7 +268,7 @@ const Home: React.FC = () => {
                       ]}
                   />
                   <Card
-                      title="quick-gateway"
+                      title={<>quick-gateway <GrGateway/></>}
                       description="A mock payment gateway service facilitating end-to-end testing of payment flows. Enables developers to simulate various transaction scenarios and responses."
                       link="https://github.com/gbburleigh/quick-gateway"
                       linkText="View Project"
@@ -277,7 +283,7 @@ const Home: React.FC = () => {
                       ]}
                   />
                   <Card
-                      title="quick-card-tokenizer"
+                      title={<>quick-card-tokenizer <GiToken/></>}
                       description="A mock card tokenization service simulating secure token generation over HTTP. Useful for testing payment processing integrations without handling real card data."
                       link="https://github.com/gbburleigh/quick-card-tokenizer"
                       linkText="View Project"
@@ -304,7 +310,7 @@ const Home: React.FC = () => {
                       ]}
                   />
                   <Card
-                      title="quick-tools"
+                      title={<>quick-tools<BsTools/></>}
                       description="A collection of useful scripts, commands, and resources for streamlining common development tasks. Includes utilities for automation, data manipulation, and more."
                       link="https://github.com/gbburleigh/quick-tools"
                       linkText="View Project"
@@ -318,7 +324,7 @@ const Home: React.FC = () => {
                       ]}
                   />
                   <Card
-                      title="quick-gha"
+                      title={<>quick-gha <DiGithubBadge/></>}
                       description="A curated collection of reusable GitHub Actions designed to automate CI/CD workflows. Provides streamlined build, test, and deployment processes for Go projects."
                       link="https://github.com/gbburleigh/quick-gha"
                       linkText="View Project"

@@ -197,7 +197,7 @@ const TechIcon = styled.span`
 `;
 
 interface CardProps {
-    title: string;
+    title: string | React.ReactNode;
     description: string;
     image?: string;
     link?: string;
