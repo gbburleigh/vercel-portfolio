@@ -227,7 +227,7 @@ const Card: React.FC<CardProps> = ({ title, description, image, link, linkText, 
     return (
         <CardContainer>
             <CardColumn>
-                {image && <CardImage src={image} alt={title} />}
+                {image && <CardImage src={image} alt={typeof title === 'string' ? title : ''} />}
                 <CardTitle>
                     {companyLogo && <CompanyLogoImg src={companyLogo} />}
                     {title}
