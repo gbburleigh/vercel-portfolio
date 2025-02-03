@@ -175,7 +175,7 @@ const Home: React.FC = () => {
                     <SectionTitle>Work</SectionTitle>
                     <Card
                         title="Stax Payments"
-                        description="Stax Payments is a fintech company that provides a secure and easy-to-use payment processing solution for businesses of all sizes."
+                        description="Hand picked as one of three developers to start a risk/underwriting and onboarding focused squad. Completed several impactful projects still serving 1000s of merchants daily, with a focus on scalable infrastructure and successful customer experiences."
                         link="https://staxpayments.com/"
                         linkText="Stax Payments"
                         technologies={[
@@ -193,7 +193,7 @@ const Home: React.FC = () => {
                     />
                     <Card
                         title="CardX"
-                        description="CardX is a fintech company that provides a secure and easy-to-use payment processing solution for businesses of all sizes."
+                        description="Fullstack development for a surcharging compliant payment processing startup in Downtown Chicago. Joined a team of 12 developers to build a merchant-focused payment platform using Vue, Node.js, and PostgreSQL. Additional skills include AWS infrastructure development, telemetry through Dataog, and agile methodologies like CI/CD."
                         link="https://cardx.com/"
                         linkText="CardX"
                         technologies={[
@@ -211,7 +211,7 @@ const Home: React.FC = () => {
                     />
                     <Card
                         title="Northwestern University"
-                        description="Northwestern University is a leading research university in the United States."
+                        description="Completed a Bachelor of Science in CS at the McCormick School of Engineering. Curriculum focused on AI/ML, Systems and Security, and Fullstack Web Development."
                         link="https://www.mccormick.northwestern.edu/"
                         linkText="Northwestern University"
                         technologies={[
