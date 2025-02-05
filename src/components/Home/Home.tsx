@@ -36,7 +36,7 @@ import '@fontsource/roboto';
 import { LuLogs } from 'react-icons/lu';
 import { BiData } from 'react-icons/bi';
 import { GrGateway } from 'react-icons/gr';
-import { GiToken } from 'react-icons/gi';
+import { GiToken, GiTorch } from 'react-icons/gi';
 import { BsTools } from 'react-icons/bs';
 import { DiGithubBadge } from 'react-icons/di';
 
@@ -166,7 +166,6 @@ const Home: React.FC = () => {
             <Main>
                 <AnimatedSection id="about" ref={(el) => sectionRefs.current[0] = el as HTMLElement } className={visibleSections[0] ? 'visible' : ''}>
                     <SectionTitle>About Me</SectionTitle>
-                    {/* <ProfileImage src={profileImage} alt="Your Profile" /> */}
                     <Bio />
                 </AnimatedSection>
                 <Divider />
@@ -235,7 +234,7 @@ const Home: React.FC = () => {
                   <StylishParagraph>I'm currently learning Golang and keeping my Python skills sharp. Most of my projects are research-focused with an emphasis on exploring new fields. I always like learning about different verticals within the industry!</StylishParagraph>
                   <Card
                       title={<>quick-seeders <BiData/></>}
-                      description="A fast test data generation tool designed to quickly populate databases for development and testing. Streamlines setup and ensures consistent test environments."
+                      description={<>A <strong>fast test data generation tool</strong> designed to quickly populate databases for development and testing. Streamlines setup and ensures consistent test environments. <br/><br/>Perfect for mocking up different scenarios at scale, with support for varying data types and sizes. Supports Postgres, MySQL, and SQLite, JSON, and CSV.</>}
                       link="https://github.com/gbburleigh/quick-seeders"
                       linkText="View Project"
                       technologies={[
@@ -246,30 +245,30 @@ const Home: React.FC = () => {
                         "DevOps",
                         "Analytics",
                         "Util"
-
                       ]}
                       progress={90}
                   />
                   <Card
                       title={<>quick-logger <LuLogs/></>}
-                      description="A simple logging service providing efficient log streaming via gRPC. Designed for rapid integration and streamlined debugging in microservice architectures."
+                      description={<>A <strong>compact logging service</strong> providing efficient log streaming via gRPC. Designed for rapid integration and streamlined debugging in microservice architectures. Perfect for quickly and easily handling telemetry for your next Go package.</>}
                       link="https://github.com/gbburleigh/quick-logger"
                       linkText="View Project"
                       progress={50}
                       technologies={[
                         "Golang",
                         "SQL",
+                        "AWS",
+                        "Datadog",
                         "Analytics",
                         "Testing",
                         "DevOps",
                         "Util",
-                        "AWS",
-                        "Datadog"
+                        "Networks"
                       ]}
                   />
                   <Card
                       title={<>quick-gateway <GrGateway/></>}
-                      description="A mock payment gateway service facilitating end-to-end testing of payment flows. Enables developers to simulate various transaction scenarios and responses."
+                      description={<>A <strong>mock payment gateway service</strong> facilitating end-to-end testing of payment flows. Enables developers to simulate various transaction scenarios and responses. Test POS terminals, emulate processors, and exchange funds (for research).</>}
                       link="https://github.com/gbburleigh/quick-gateway"
                       linkText="View Project"
                       progress={50}
@@ -279,12 +278,12 @@ const Home: React.FC = () => {
                         "Payments",
                         "Security",
                         "DevOps",
-
+                        "Research"
                       ]}
                   />
                   <Card
                       title={<>quick-card-tokenizer <GiToken/></>}
-                      description="A mock card tokenization service simulating secure token generation over HTTP. Useful for testing payment processing integrations without handling real card data."
+                      description={<>A <strong>mock card tokenization service</strong> simulating secure token generation over HTTP. Useful for testing payment processing integrations without handling real card data. <br/><br/>Supports different payment methods like card (not) present and ACH. Uses SQLite to store and associate tokens with payment methods and users.</>}
                       link="https://github.com/gbburleigh/quick-card-tokenizer"
                       linkText="View Project"
                       technologies={[
@@ -293,25 +292,28 @@ const Home: React.FC = () => {
                         "Payments",
                         "Security",
                         "DevOps",
+                        "Research"
                       ]}
                       progress={75}
                   />
                   <Card
-                      title="quick-auth"
-                      description="A basic server authentication handler providing simple and effective access control. Implements standard authentication methods for securing APIs and applications."
-                      link="https://github.com/gbburleigh/quick-auth"
+                      title={<>quick-card-reader <GiTorch/></>}
+                      description={<><strong>Card reading agent</strong> in Python with a focus on OCR and image processing. Utilizes sklearn and CV2 to read card numbers and expiration dates based off a small corpus of generic training data. <br/><br/>Used for my own personal research into machine learning and computer vision.</>}
+                      link="https://github.com/gbburleigh/quick-card-reader"
                       linkText="View Project"
-                      progress={0}
+                      progress={30}
                       technologies={[
-                        "Golang",
-                        "SQL",
+                        "Python",
+                        "AI/ML",
+                        "Analytics",
                         "Security",
                         "DevOps",
+                        "Research"
                       ]}
                   />
                   <Card
                       title={<>quick-tools<BsTools/></>}
-                      description="A collection of useful scripts, commands, and resources for streamlining common development tasks. Includes utilities for automation, data manipulation, and more."
+                      description={<>A <strong>collection of useful scripts, commands, and resources</strong> for streamlining common development tasks. Includes utilities for automation, data manipulation, and more. <br/><br/>Serves as a running repository for knowledge, automations, and helpful tidbits I collect along my development.</>}
                       link="https://github.com/gbburleigh/quick-tools"
                       linkText="View Project"
                       progress={40}
@@ -320,12 +322,13 @@ const Home: React.FC = () => {
                         "SQL",
                         "Testing",
                         "Util",
-                        "Web"
+                        "Web",
+                        "DevOps",
                       ]}
                   />
                   <Card
                       title={<>quick-gha <DiGithubBadge/></>}
-                      description="A curated collection of reusable GitHub Actions designed to automate CI/CD workflows. Provides streamlined build, test, and deployment processes for Go projects."
+                      description={<>A <strong>curated collection of reusable GitHub Actions</strong> designed to automate CI/CD workflows. Provides streamlined build, test, and deployment processes for Go and Node.js projects. <br/><br/>Perfect for automating the start of your nextproject.</>}
                       link="https://github.com/gbburleigh/quick-gha"
                       linkText="View Project"
                       progress={80}
@@ -334,7 +337,9 @@ const Home: React.FC = () => {
                         "SQL",
                         "Testing",
                         "Util",
-                        "Web"
+                        "Web",
+                        "DevOps",
+                        "Cloud"
                       ]}
                   />
               </AnimatedSection>

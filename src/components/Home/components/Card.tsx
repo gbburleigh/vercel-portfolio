@@ -18,11 +18,14 @@ import {
     FaLock,
     FaWrench,
     FaGlobe,
+    FaNetworkWired,
+    FaCloud,
 } from 'react-icons/fa'; // Import icons
 import { SiTypescript, SiNextdotjs, SiDatadog, SiJira, SiBitbucket, SiPuppeteer, SiJest } from "react-icons/si"
 import { FaGears, FaGithub, FaGolang, FaSackDollar } from 'react-icons/fa6';
 import ProgressBar from './ProgressBar';
-import { BiLoader } from 'react-icons/bi';
+import { BiBook, BiLoader } from 'react-icons/bi';
+import { GiBrain } from 'react-icons/gi';
 
 const CardContainer = styled.div`
     background-color: #111;
@@ -35,6 +38,7 @@ const CardContainer = styled.div`
     gap: 2rem;
     align-items: center; /* Align items to the top */
     transition: transform 0.2s;
+    line-height: 1.75;
 
     &:hover {
         transform: translateY(-5px);
@@ -277,9 +281,13 @@ const Card: React.FC<CardProps> = ({ title, description, image, link, linkText, 
                                     {tech === "Web" && <FaGlobe />}
                                     {tech === "Jest" && <SiJest />}
                                     {tech === "Testing" && <FaCode />}
+                                    {tech === "AI/ML" && <GiBrain />}
+                                    {tech === "Networks" && <FaNetworkWired />}
+                                    {tech === "Cloud" && <FaCloud />}
+                                    {tech === "Research" && <BiBook />}
                                     </TechIcon>
                                         {
-                                            ["Analytics", "Payments", "Security", "DevOps", "Util", "Web", "Testing"].includes(tech) ?
+                                            ["Analytics", "Payments", "Security", "DevOps", "Util", "Web", "Testing", "AI/ML", "Networks", "Cloud", "Research"].includes(tech) ?
                                             <p style={{fontWeight: 'bold'}}>{tech}</p> :
                                             <p style={{fontWeight: 'lighter'}}>{tech}</p>
                                         }
