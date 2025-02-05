@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
                 <FooterLink href="mailto:your.email@example.com">Email</FooterLink>
                 {/* Add more links as needed */}
             </FooterLinks>
-            <Copyright>&copy; {new Date().getFullYear()} Your Name</Copyright>
+            <Copyright>&copy; {new Date().getFullYear()} Graham Burleigh</Copyright>
         </FooterContainer>
     );
 };

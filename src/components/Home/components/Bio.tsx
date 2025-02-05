@@ -31,7 +31,7 @@ const Bio: React.FC = () => {
         <AboutMeContainer>
             <AboutMeColumn>
                 <StylishParagraph>
-                I'm a passionate and driven web developer with a keen eye for detail and a love for creating clean, user-friendly, and performant web applications. I thrive on tackling challenging projects and am constantly seeking opportunities to expand my skillset and stay up-to-date with the latest technologies. My focus is on front-end development using modern frameworks like React and TypeScript, and I'm always eager to collaborate and contribute to innovative projects.                </StylishParagraph>
+                I'm a passionate and driven web developer with a keen eye for detail and a love for creating clean, user-friendly, and performant software. I thrive on tackling challenging projects and am constantly seeking opportunities to expand my skillset and stay up-to-date with the latest technologies. My focus is on fullstack development using modern frameworks like React and TypeScript, and I'm always eager to collaborate and contribute to innovative projects. Currently I'm learning about AI and DevOps - focusing on AWS infrastructure and open-source libraries like Pytorch, CV, and Langchain. Let's talk software, payments, industry, or anything career-oriented!                </StylishParagraph>
             </AboutMeColumn>
             <AboutMeColumn>
                 <ProfileImage src={profileImage} alt="Your Profile" />

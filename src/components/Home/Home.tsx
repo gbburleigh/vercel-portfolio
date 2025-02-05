@@ -175,7 +175,7 @@ const Home: React.FC = () => {
                     <SectionTitle>Work</SectionTitle>
                     <Card
                         title="Stax Payments"
-                        description="Hand picked as one of three developers to start a risk/underwriting and onboarding focused squad. Completed several impactful projects still serving 1000s of merchants daily, with a focus on scalable infrastructure and successful customer experiences."
+                        description={<><strong>Hand picked as one of three developers to start a risk/underwriting and onboarding focused squad</strong>. Completed several impactful projects still <strong>serving 1000s of merchants daily</strong>, with a focus on scalable infrastructure and successful customer experiences. Extensive experience with <strong>Typescript, SQL optimization, AWS and Datadog.</strong></>}
                         link="https://staxpayments.com/"
                         linkText="Stax Payments"
                         technologies={[
@@ -193,7 +193,7 @@ const Home: React.FC = () => {
                     />
                     <Card
                         title="CardX"
-                        description="Fullstack development for a surcharging compliant payment processing startup in Downtown Chicago. Joined a team of 12 developers to build a merchant-focused payment platform using Vue, Node.js, and PostgreSQL. Additional skills include AWS infrastructure development, telemetry through Dataog, and agile methodologies like CI/CD."
+                        description={<><strong>Fullstack development for a surcharging compliant payment processing startup</strong> in Downtown Chicago. Joined a team of 12 developers to build a <strong>merchant-focused payment platform using Vue, Node.js, and PostgreSQL</strong>. Additional skills include <strong>AWS infrastructure development, telemetry through Dataog, and agile methodologies like CI/CD</strong></>}
                         link="https://cardx.com/"
                         linkText="CardX"
                         technologies={[
@@ -211,8 +211,8 @@ const Home: React.FC = () => {
                     />
                     <Card
                         title="Northwestern University"
-                        description="Completed a Bachelor of Science in CS at the McCormick School of Engineering. Curriculum focused on AI/ML, Systems and Security, and Fullstack Web Development."
-                        link="https://www.mccormick.northwestern.edu/"
+                        description={<>Completed a <strong>Bachelor of Science in CS</strong> at the McCormick School of Engineering. Curriculum focused on <strong>AI/ML, Systems and Security, and Fullstack Web Development</strong>. Performed crucial research involved in publications like <strong style={{fontStyle: 'italic'}}>Decoding the MITRE Engenuity ATT&CK Enterprise Evaluation</strong> and <strong style={{fontStyle: 'italic'}}>Inside the Invisible Cage</strong></>}
+                        link="https://www.mccormick.northwestern.edu/"  
                         linkText="Northwestern University"
                         technologies={[
                             "Python",

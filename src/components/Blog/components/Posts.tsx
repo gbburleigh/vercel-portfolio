@@ -73,14 +73,17 @@ const BlogPostLink = styled.a`
 const Posts: React.FC = () => {
     return (
         <BlogPostsContainer>
-            {blogPosts.map((post, index) => (
-                <BlogPostCard key={index}>
-                    <BlogPostImage src={post.image} alt={post.title} />
-                    <BlogPostTitle>{post.title}</BlogPostTitle>
-                    <BlogPostContent>{post.content}</BlogPostContent>
-                    <BlogPostLink href={post.link} target="_blank" rel="noopener noreferrer">Read More</BlogPostLink>
-                </BlogPostCard>
-            ))}
+            {blogPosts.map((post, index) => {
+                const content = post.content.length > 100 ? post.content.substring(0, 250) + '...' : post.content;
+                return (
+                    <BlogPostCard key={index}>
+                        <BlogPostImage src={post.image} alt={post.title} />
+                        <BlogPostTitle>{post.title}</BlogPostTitle>
+                        <BlogPostContent>{content}</BlogPostContent>
+                        <BlogPostLink href={post.link} target="_blank" rel="noopener noreferrer">Read More</BlogPostLink>
+                    </BlogPostCard>
+                )
+            })}
         </BlogPostsContainer>
     )
 };
